@@ -11,9 +11,6 @@ importers:
       '@apollo/client':
         specifier: ^3.11.1
         version: 3.11.1(@types/react@18.3.3)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@microsoft/fetch-event-source':
-        specifier: ^2.0.1
-        version: 2.0.1
       '@tanstack/react-query':
         specifier: ^5.51.15
         version: 5.51.15(react@18.3.1)
@@ -23,9 +20,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
-      socket.io-client:
-        specifier: ^4.7.5
-        version: 4.7.5
+      request-all-in-one:
+        specifier: ^0.0.3
+        version: 0.0.3(@apollo/client@3.11.1(@types/react@18.3.3)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@microsoft/fetch-event-source@2.0.1)(@tanstack/react-query@5.51.15(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(socket.io-client@4.7.5)
     devDependencies:
       '@types/node':
         specifier: ^20.14.11
@@ -1479,6 +1476,16 @@ packages:
         optional: true
       react:
         optional: true
+
+  request-all-in-one@0.0.3:
+    resolution: {integrity: sha512-bK64kdia5Y8lvKKozVL4C49wXJcGPIs5zNPIPQp/CcQayIt9/IS8dDi77HB8h3ItbsgfPWwmQ4qRxY7zCDu/zg==}
+    peerDependencies:
+      '@apollo/client': '>=3.11.1'
+      '@microsoft/fetch-event-source': '>=2.0.1'
+      '@tanstack/react-query': '>=5.51.15'
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+      socket.io-client: '>=4.7.5'
 
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
@@ -3212,6 +3219,15 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.3
       react: 18.3.1
+
+  request-all-in-one@0.0.3(@apollo/client@3.11.1(@types/react@18.3.3)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@microsoft/fetch-event-source@2.0.1)(@tanstack/react-query@5.51.15(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(socket.io-client@4.7.5):
+    dependencies:
+      '@apollo/client': 3.11.1(@types/react@18.3.3)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@microsoft/fetch-event-source': 2.0.1
+      '@tanstack/react-query': 5.51.15(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      socket.io-client: 4.7.5
 
   require-from-string@2.0.2: {}
 

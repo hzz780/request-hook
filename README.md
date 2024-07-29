@@ -1,42 +1,20 @@
 # Quick Start
 
 ```bash
-npm install request-all-in-one
+npm install request-all-in-one-hook
 ```
 
 ```typescript
-const client = new RequestAllInOne({});
+// socket
+const timeFromSocket = useSocket('/socket-io', 'time');
 
-// Get
-client.get('https://api.github.com/repos/TanStack/query');
-
-// Post
-client.post('https://api.github.com/repos/TanStack/query');
-
-// Socket
-client.socket('/socket-io/', {
-  type: 'on',
-  event: 'answer',
-  callback: (response: any) => {
-    console.log('answer: ', response);
-    setMessage(response);
-  },
-  queryKey: ['answer']
-});
-
-// gql
-export const queryCountries = gql`
-  query Countries {
-    countries {
-      code
-      name
-      emoji
-    }
-  }
-`;
-client.gql('https://countries.trevorblades.com', {
+// graphql
+const {data}: any = useGraphql('https://countries.trevorblades.com', {
   query: queryCountries
 });
+
+// fetch
+const {data}: any = useFetch('https://api.github.com/repos/TanStack/query');
 ```
 
 fetch for get, post

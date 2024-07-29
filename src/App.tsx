@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import MyComponentVite from './components/Demo/MyComponentVite';
-import FetchPage from './pages/api-all-in-one/fetch';
 import './App.css'
+import RequestAllPage from './pages/api-all-in-one';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +11,7 @@ function App() {
       <div className="demo-container">
       </div>
       <MyComponentVite />
-      <FetchPage />
+      <RequestAllPage />
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
