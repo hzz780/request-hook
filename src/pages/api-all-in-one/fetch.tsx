@@ -1,5 +1,5 @@
 'use client';
-import {RequestAllInOne} from '../../tools/apiAllInOne/fetch-data';
+import {RequestAllInOne} from 'request-all-in-one';
 import {useEffect, useState} from 'react';
 
 const client = new RequestAllInOne({});

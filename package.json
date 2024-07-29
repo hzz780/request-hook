@@ -22,20 +22,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@apollo/client": "^3.11.1",
-    "@microsoft/fetch-event-source": "^2.0.1",
-    "@tanstack/react-query": "^5.51.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "socket.io-client": "^4.7.5"
+    "request-all-in-one": "^0.0.1"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0",
-    "socket.io-client": ">=4.7.5",
-    "@apollo/client": ">=3.11.1",
-    "@microsoft/fetch-event-source": ">=2.0.1",
-    "@tanstack/react-query": ">=5.51.15"
+    "request-all-in-one": ">=0.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
