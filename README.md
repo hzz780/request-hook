@@ -1,5 +1,7 @@
 # Quick Start
 
+request-all-in-one wrapped by https://tanstack.com/query/latest
+
 ```bash
 npm install request-all-in-one-hook
 ```
